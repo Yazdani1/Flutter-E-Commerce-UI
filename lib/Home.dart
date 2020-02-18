@@ -158,7 +158,6 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
   //Most popular items
   Widget mostpopular_items(BuildContext context,String image,String tag,String price,String name,String discount){
     return Container(
@@ -219,7 +218,6 @@ class _HomeState extends State<Home> {
             width: 200.0,
             child: Row(
               children: <Widget>[
-
                 Expanded(
                   flex: 1,
                   child: Container(
@@ -263,9 +261,7 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-
           SizedBox(height: 10.0,),
-
           Align(
             alignment: Alignment.center,
             child: Container(
