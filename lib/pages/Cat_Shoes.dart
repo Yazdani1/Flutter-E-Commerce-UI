@@ -40,7 +40,7 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
               "10"),
           allData(context, shoes7, "Women Dress", "This Dress is good", "\$90",
               "10"),
-          
+
         ],
       ),
     );
@@ -54,7 +54,7 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
       child: Card(
         elevation: 10.0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0)
+            borderRadius: BorderRadius.circular(20.0)
         ),
         child: Row(
           children: <Widget>[
@@ -75,13 +75,30 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
 
-                  Text(name,
-                    maxLines: 1,
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+
+                        Text(name,
+                          maxLines: 1,
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.black
+                          ),
+                        ),
+
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Icon(Icons.favorite,
+                          color: Colors.red,
+                          ),
+                        )
+
+                      ],
                     ),
                   ),
+
                   SizedBox(height: 5.0,),
 
                   Text(des,
@@ -129,7 +146,7 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
                                 color: Color(0xFF72286f)
                             ),
                             child: Center(
-                              child: Text(Discount+" Off",
+                              child: Text(Discount + " Off",
                                 style: TextStyle(
                                     fontSize: 15.0,
                                     color: Colors.white
@@ -144,28 +161,31 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
                   ),
                   SizedBox(height: 20.0,),
                   Container(
-                    width: MediaQuery.of(context).size.width,
+                    width: MediaQuery
+                        .of(context)
+                        .size
+                        .width,
                     child: Row(
                       children: <Widget>[
                         Container(
                             child: Align(
                               alignment: Alignment.center,
                               child: Text("-",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
                               ),
                             ),
-                          height: 40.0,
-                          width: 60.0,
-                          color: Color(0xFFe0dfe1)
+                            height: 40.0,
+                            width: 60.0,
+                            color: Color(0xFFe0dfe1)
                         ),
                         SizedBox(width: 15.0,),
                         Text("2",
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black
-                        ),
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.black
+                          ),
                         ),
                         SizedBox(width: 15.0,),
                         Container(
