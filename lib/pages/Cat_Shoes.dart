@@ -144,9 +144,7 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
                       ],
                     ),
                   ),
-
                   SizedBox(height: 20.0,),
-
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: Row(
