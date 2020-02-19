@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_ecommerceapp_ui/pages/Cat_Shoes.dart';
+import 'DetailsPage.dart';
 
 
 class Home extends StatefulWidget {
@@ -323,11 +324,16 @@ class _HomeState extends State<Home> {
               ),
               child: Align(
                 alignment: Alignment.center,
-                child: Text("View Details",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white
-                ),
+                child: InkWell(
+                  onTap: (){
+                    Navigator.of(context).push(viewDetails());
+                  },
+                  child: Text("View Details",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.white
+                  ),
+                  ),
                 ),
               ),
             ),
@@ -475,6 +481,27 @@ class _HomeState extends State<Home> {
   Route _createRoute() {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) => Cat_Shoes(),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+//        var begin = Offset(0.0, 1.0);
+//        var end = Offset.zero;
+//        var curve = Curves.ease;
+
+        //var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+        return SlideTransition(
+          position: Tween<Offset>(
+            begin: const Offset(-1, 0),
+            end: Offset.zero,
+          ).animate(animation),
+          child: child,
+        );
+      },
+    );
+  }
+
+  Route viewDetails() {
+    return PageRouteBuilder(
+      pageBuilder: (context, animation, secondaryAnimation) => DetailsPage(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
 //        var begin = Offset(0.0, 1.0);
 //        var end = Offset.zero;

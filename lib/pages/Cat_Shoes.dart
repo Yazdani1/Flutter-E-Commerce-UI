@@ -26,7 +26,6 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
 
       body: ListView(
         children: <Widget>[
-
           allData(context, shoes1, "New shoes", "This shoes is good", "\$50",
               "20"),
           allData(context, shoes2, "Women Dress", "This Dress is good", "\$90",
@@ -41,8 +40,7 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
               "10"),
           allData(context, shoes7, "Women Dress", "This Dress is good", "\$90",
               "10"),
-
-
+          
         ],
       ),
     );
