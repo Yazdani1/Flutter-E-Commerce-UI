@@ -183,14 +183,9 @@ class _Cat_ShoesState extends State<Cat_Shoes> {
                             width: 60.0,
                             color: Color(0xFFe0dfe1)
                         ),
-
-
-
                       ],
                     ),
                   )
-
-
                 ],
               ),
             )
