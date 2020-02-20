@@ -8,7 +8,11 @@ class OrderDetails extends StatefulWidget {
 class _OrderDetailsState extends State<OrderDetails> {
   @override
   Widget build(BuildContext context) {
-    return new Container();
+    return new Scaffold(
+
+      
+
+    );
   }
 }
 
