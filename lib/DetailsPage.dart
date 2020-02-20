@@ -156,9 +156,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         width: 170.0,
                         child: Row(
                           children: <Widget>[
-
                             Icon(Icons.add,color: Colors.black,size: 20.0,),
-
                             Text("Add to cart",
                             style: TextStyle(
                               fontSize: 18.0,
