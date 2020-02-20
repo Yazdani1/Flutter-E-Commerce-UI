@@ -69,7 +69,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
 
             Container(
               margin: EdgeInsets.all(10.0),
-              height: 2.0,
+              height: 1.0,
               width: MediaQuery
                   .of(context)
                   .size

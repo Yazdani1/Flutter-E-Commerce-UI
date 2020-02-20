@@ -24,7 +24,9 @@ class _OrderDetailsState extends State<OrderDetails> {
 
         child: Column(
           children: <Widget>[
-            orderDetails(context, shoes1, "569865", "456", "Panding..")
+            orderDetails(context, shoes1, "569865", "456", "Panding.."),
+            orderDetails(context, shoes1, "569865", "456", "Panding.."),
+            orderDetails(context, shoes1, "569865", "456", "Panding.."),
           ],
         ),
 
@@ -52,12 +54,22 @@ class _OrderDetailsState extends State<OrderDetails> {
                       children: <Widget>[
                         Icon(Icons.history, size: 20.0, color: Colors.black,),
                         SizedBox(width: 5.0,),
-                        Text("Transaction No:",
-                          style: TextStyle(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold
+                        RichText(
+                          text: TextSpan(
+                            style: DefaultTextStyle
+                                .of(context)
+                                .style,
+                            children: <TextSpan>[
+                              TextSpan(text: 'Transction No: ',
+                                  style: TextStyle(
+                                      fontSize: 18.0, fontWeight: FontWeight.bold)),
+                              TextSpan(text: transaction,
+                                  style: TextStyle(
+                                      fontSize: 18.0, fontWeight: FontWeight.bold)),
+                            ],
                           ),
                         ),
+
                       ],
                     ),
                   ),
@@ -73,7 +85,7 @@ class _OrderDetailsState extends State<OrderDetails> {
 
             Container(
               margin: EdgeInsets.all(10.0),
-              height: 2.0,
+              height: 1,
               width: MediaQuery
                   .of(context)
                   .size

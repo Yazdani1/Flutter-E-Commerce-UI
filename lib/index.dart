@@ -28,6 +28,57 @@ class _IndexState extends State<Index> {
       ),
 
       drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+
+            UserAccountsDrawerHeader(
+                accountName: Text("E-commerce",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white
+                ),
+                ),
+              accountEmail: null,
+              decoration: BoxDecoration(
+                color: Color(0xFF72286f)
+              ),
+            ),
+            
+            ListTile(
+              title: Text("Setting",
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black
+              ),
+              ),
+              leading: Icon(Icons.settings,size: 30,color: Colors.deepOrange,),
+            ),
+            ListTile(
+              title: Text("About",
+                style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black
+                ),
+              ),
+              leading: Icon(Icons.photo,size: 30,color: Colors.deepOrange,),
+            ),
+
+            ListTile(
+              title: Text("Security",
+                style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black
+                ),
+              ),
+              leading: Icon(Icons.security,size: 30,color: Colors.deepOrange,),
+            ),
+
+
+
+
+
+          ],
+        ),
       ),
       body: pageOptions[_selectPage],
 
