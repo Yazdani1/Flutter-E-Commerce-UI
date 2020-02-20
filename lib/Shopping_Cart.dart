@@ -111,6 +111,90 @@ class _ShoppingCartState extends State<ShoppingCart> {
                       color: Colors.black,
                     ),
 
+                    SizedBox(height: 10.0,),
+
+                    Container(
+                      margin: EdgeInsets.all(10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text("SubTotal:",
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black
+                          ),
+                          ),
+                          Text("\$600.00",
+                            style: TextStyle(
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black
+                            ),
+                          ),
+
+
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 6.0,),
+
+                    Container(
+                      height: 50.0,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        color: Color(0xFF72286f),
+                      ),
+                      child: Center(
+                        child: Text("Check out",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white
+                        ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 10.0,),
+
+                    Container(
+                      height: 50.0,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        border: Border.all(
+                          style: BorderStyle.solid,
+                          color: Colors.black
+                        )
+                      ),
+                      child: Center(
+                        child: Text("Pay with paypal",
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 15.0,),
+
+                    Container(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text("Continue Shopping",
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.black
+                        ),
+                        ),
+                      ),
+                    )
+
+
+
+
+
+
 
 
                   ],
