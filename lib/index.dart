@@ -28,9 +28,7 @@ class _IndexState extends State<Index> {
       ),
 
       drawer: Drawer(
-
       ),
-
       body: pageOptions[_selectPage],
 
       backgroundColor: Color(0xFF222240),
