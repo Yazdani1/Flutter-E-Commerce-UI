@@ -80,9 +80,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                   .width,
               color: Colors.black,
             ),
-
             SizedBox(height: 10.0,),
-
             Container(
               margin: EdgeInsets.all(10.0),
               child: Row(
@@ -106,7 +104,6 @@ class _OrderDetailsState extends State<OrderDetails> {
               ),
             ),
             SizedBox(height: 10.0,),
-
             Container(
               margin: EdgeInsets.all(10.0),
               child: Row(
@@ -129,7 +126,6 @@ class _OrderDetailsState extends State<OrderDetails> {
                 ],
               ),
             ),
-
             Container(
               margin: EdgeInsets.all(10.0),
               child: Align(
@@ -142,10 +138,6 @@ class _OrderDetailsState extends State<OrderDetails> {
                 ),
               ),
             )
-
-
-
-
 
           ],
         ),
