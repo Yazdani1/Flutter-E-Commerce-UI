@@ -29,12 +29,9 @@ class _OrderDetailsState extends State<OrderDetails> {
             orderDetails(context, shoes1, "569865", "456", "Panding.."),
           ],
         ),
-
       ),
-
     );
   }
-
   Widget orderDetails(BuildContext context, String img, String transaction,
       String amount, String status) {
     return Container(
@@ -81,8 +78,6 @@ class _OrderDetailsState extends State<OrderDetails> {
                 ],
               ),
             ),
-
-
             Container(
               margin: EdgeInsets.all(10.0),
               height: 1,
